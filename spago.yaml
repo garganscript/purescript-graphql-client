@@ -1,0 +1,60 @@
+workspace:
+  packageSet:
+    registry: 50.7.0
+  extraPackages:
+    spec-discovery:
+      git: https://github.com/garganscript/purescript-spec-discovery.git
+      ref: v8.2.0-spago-next
+
+package:
+  name: graphql-client
+  dependencies:
+    - aff
+    - affjax
+    - affjax-node
+    - affjax-web
+    - argonaut-codecs
+    - argonaut-core
+    - arrays
+    - bifunctors
+    - control
+    - datetime
+    - effect
+    - either
+    - enums
+    - filterable
+    - foldable-traversable
+    - foreign
+    - foreign-object
+    - functions
+    - halogen-subscriptions
+    - heterogeneous
+    - http-methods
+    - integers
+    - lists
+    - maybe
+    - media-types
+    - newtype
+    - now
+    - nullable
+    - numbers
+    - ordered-collections
+    - partial
+    - prelude
+    - psci-support
+    - record
+    - string-parsers
+    - strings
+    - transformers
+    - tuples
+    - typelevel-lists
+    - unfoldable
+    - unicode
+    - unsafe-coerce
+    - variant
+  test:
+    main: Test.Main
+    dependencies:
+      - quickcheck
+      - spec
+      - spec-discovery
